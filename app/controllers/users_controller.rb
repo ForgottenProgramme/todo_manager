@@ -20,7 +20,7 @@ class UsersController < ApplicationController
 
   def show
     email = params[:email]
-    password = param[:password]
+    password = params[:password]
     person = User.find_by(email: email, password: password)
     if !person
       render plain: "false"
