@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # post "todos", to: "todos#create"
   #get "todos/:id", to: "todos#show"
   post "users/login", to: "users#show"
+  delete "users/delete", to: "users#destroy"
+  patch "users/change-password", to: "users#update"
 
   resources :todos
   resources :users
