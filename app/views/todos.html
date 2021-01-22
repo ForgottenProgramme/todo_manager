@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Todo Management App</title>
+  <link rel="stylesheet" type="text/css" href="todo-app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <main class="TodoPageMain">
+    <article>
+      <h1 class="TodoPage-title"> My Todo List </h1>
+      <section class="AddTodo">
+        <form action="/action_page.php">
+          <input class="AddTodo-text" type="text" placeholder="What's next?">
+          <input class="AddTodo-date" type="date">
+          <input class="AddTodo-button" type="button" value="Add">
+        </form>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle-text"> Due Today </p>
+          <p class="TodoSectionTitle-remainingCount"> 0/4 </p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Call the municipality office
+              <p class="TodoItem-overdueLabel">Overdue</p>
+            </label>
+          </li>
+
+          <li class="TodoItem">
+            <p><input class="TodoItem-checkbox" type="checkbox">
+              Call the municipality office
+              <i class="fa fa-trash-o" style="font-size:20px"></i>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle-text"> Due Tomorrow </p>
+          <p class="TodoSectionTitle-remainingCount"> 0/2 </p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <input class="TodoItem-checkbox" type="checkbox">
+            Call the municipality office
+          </li>
+          <li class="TodoItem">
+            <input class="TodoItem-checkbox" type="checkbox">
+            Call the municipality office
+          </li>
+        </ul>
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle-text"> Remaining </p>
+          <p class="TodoSectionTitle-remainingCount"> 0/2 </p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <input class="TodoItem-checkbox" type="checkbox">
+            Call the municipality office
+          </li>
+          <li class="TodoItem">
+            <input class="TodoItem-checkbox" type="checkbox">
+            Call the municipality office
+          </li>
+        </ul>
+      </section>
+
+    </article>
+
+  </main>
+
+</body>
+
+</html>
