@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   #to display the users in a list
   def index
-    render plain: User.all.map { |user| user.to_pleasant_string }.join("\n")
+    render plain: User.order(:name).map { |user| user.to_pleasant_string }.join("\n")
   end
 
   #to add a new user
