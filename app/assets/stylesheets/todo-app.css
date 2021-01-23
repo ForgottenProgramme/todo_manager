@@ -100,10 +100,11 @@ ul {
   padding: 2px 8px;
   align-items: center;
 }
-
-.TodoItem-overdueLabel {
+.TodoItem-dueDate {
+  font-size: 10px;
+  color: #5b5961;
   margin-left: 10px;
-  color: red;
-  font-size: 12px;
-  display: inline;
+}
+.TodoItem-container:hover {
+  background-color: #f1edf7;
 }

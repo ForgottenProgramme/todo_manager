@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   delete "users/delete", to: "users#destroy"
   patch "users/change-password", to: "users#update"
 
+  get "/" => "home#index"
+
   resources :todos
   resources :users
+
 end
