@@ -48,7 +48,7 @@ ul {
   padding: 6px 22px;
   font-size: 14px;
   border-radius: 4px;
-  color: #453c52;
+  color: white;
   border: 1px solid transparent;
   background-color: green;
 }
@@ -65,7 +65,7 @@ ul {
 }
 
 .TodoSectionTitle-text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #453c52;
   margin-right: 8px;
@@ -87,7 +87,7 @@ ul {
   font-size: 14px;
   margin-left: 8px;
   margin-bottom: 6px;
-  color: #453c52;
+  color: #575061;
 }
 
 .TodoItem-checkbox {
