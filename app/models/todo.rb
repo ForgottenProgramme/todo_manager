@@ -20,8 +20,4 @@ class Todo < ActiveRecord::Base
     all.where(completed: false)
   end
 
-  def completed?
-    todo.completed
-  end
-
 end
