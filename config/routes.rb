@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "/" => "home#index"
   get "/signin" => "sessions#new"
   post "/signin" => "sessions#create", as: :sessions
+  delete "/signout" => "sessions#destroy", as: :destroy_session
 
 
   resources :todos
