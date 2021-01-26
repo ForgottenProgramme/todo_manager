@@ -9,7 +9,7 @@ class TodosController < ApplicationController
 
   def show
     id = params[:id]
-    todo = Todo .where(user_id: current_user.id).find(id)
+    todo = Todo.of_user(current_user)
     #render plain: todo.to_pleasant_string
     render "todos"
   end

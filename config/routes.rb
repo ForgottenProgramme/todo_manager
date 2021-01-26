@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   patch "users/change-password", to: "users#update"
 
   get "/" => "home#index"
-  get "/signin" => "sessions#new"
+  get "/signin" => "sessions#new", as: :new_sessions
   post "/signin" => "sessions#create", as: :sessions
   delete "/signout" => "sessions#destroy", as: :destroy_session
 
