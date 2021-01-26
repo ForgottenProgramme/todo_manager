@@ -1,5 +1,8 @@
 class Todo < ActiveRecord::Base
 
+  validates :todo_text, presence: true
+  validates :due_date, presence: true
+
   belongs_to :user
 
   def self.of_user(user)
